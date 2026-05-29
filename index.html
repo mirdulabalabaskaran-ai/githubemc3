@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(to right, #141e30, #243b55);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            width:400px;
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .container h1{
+            text-align:center;
+            margin-bottom:25px;
+            color:#243b55;
+        }
+
+        .input-box{
+            margin-bottom:18px;
+        }
+
+        .input-box label{
+            display:block;
+            margin-bottom:6px;
+            font-weight:bold;
+        }
+
+        .input-box input,
+        .input-box select,
+        .input-box textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:15px;
+        }
+
+        .input-box textarea{
+            resize:none;
+            height:80px;
+        }
+
+        .btn{
+            width:100%;
+            padding:12px;
+            background:#243b55;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#141e30;
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:15px;
+            font-size:14px;
+            color:gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Hackathon Registration</h1>
+
+        <form>
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your number" required>
+            </div>
+
+            <div class="input-box">
+                <label>College Name</label>
+                <input type="text" placeholder="Enter college name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Department</label>
+                <select required>
+                    <option value="">Select Department</option>
+                    <option>CSE</option>
+                    <option>AI & DS</option>
+                    <option>ECE</option>
+                    <option>EEE</option>
+                    <option>Mechanical</option>
+                    <option>Civil</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Team Name</label>
+                <input type="text" placeholder="Enter team name">
+            </div>
+
+            <div class="input-box">
+                <label>Project Idea</label>
+                <textarea placeholder="Describe your idea"></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                Register Now
+            </button>
+
+        </form>
+
+        <div class="footer">
+            © 2026 Hackathon Event
+        </div>
+
+    </div>
+
+</body>
+</html>
